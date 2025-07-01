@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interior Essence - Interior Design Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      padding: 1rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #eee8e8;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services, .about, .contact {
+      margin-bottom: 40px;
+    }
+
+    .services h2, .about h2, .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .service-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service-box i {
+      font-size: 2.5rem;
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #e67e22;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Interior Essence</h1>
+  <nav>
+   <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="booking.html">Book Now</a>
+  <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Transform Your Space with Style</h2>
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="service-items">
+    <div class="service-box">
+      <i class="fas fa-couch"></i>
+      <h3>Living Room Design</h3>
+      <p>Elegant and comfortable designs tailored to your lifestyle.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-bed"></i>
+      <h3>Bedroom Makeovers</h3>
+      <p>Create peaceful sanctuaries with warm, modern aesthetics.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-bath"></i>
+      <h3>Bathroom Remodeling</h3>
+      <p>Luxury upgrades to elevate your daily routines.</p>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-paint-roller"></i>
+      <h3>Custom Wall Art</h3>
+      <p>Personalized finishes to express your unique style.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>At Interior Essence, we believe your space should tell your story. Our professional designers bring creativity, comfort, and elegance together to make your vision a reality.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Interior Essence. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

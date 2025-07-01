@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment - Interior Essence</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Interior Essence</h1>
+  </header>
+  <h2>Book Your Consultation</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select required>
+      <option value="">Select Service</option>
+      <option value="livingroom">Living Room Design</option>
+      <option value="bedroom">Bedroom Makeover</option>
+      <option value="bathroom">Bathroom Renovation</option>
+    </select>
+    <input type="date" required>
+    <button type="submit">Confirm Booking</button>
+  </form>
+  <footer>&copy; 2025 Interior Essence. All rights reserved.</footer>
+</body>
+</html>
